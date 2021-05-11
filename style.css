@@ -210,6 +210,7 @@ p {
 	background-position: top center;
 	position: relative;
 	z-index: 1;
+	width: 100%;
 }
 #hero::after {
 	content: '';
@@ -278,6 +279,13 @@ p {
 	border-radius: 0px 50px;
 	box-shadow: 0 0 10px #32cee6;
 }
+#hero-img img{
+	opacity: 0;
+	transition: 3.5s opacity;
+}
+#hero-img img.visible{
+	opacity: 1;
+}
 /* End Hero Section */
 
 /* About Section */
@@ -316,6 +324,9 @@ p {
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
+	/* border-radius: 0px 50px; */
+	box-shadow: 0 0 10px #32cee6;
+
 }
 #about .col-left .about-img::after {
 	content: '';
@@ -496,11 +507,11 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
+	box-shadow: 0px 0px 10px 0 #0000002c;
 	transition: .3s ease box-shadow;
 }
 #contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+	box-shadow: 0px 0px 25px 0 #0000002c;
 }
 #contact .icon {
 	width: 70px;
@@ -602,7 +613,6 @@ p {
 	#hero h1 {
 		font-size: 4rem;
 	}
-
 	#hero .hero-img-box {
 		display: block;
 		justify-content: center;
@@ -612,7 +622,7 @@ p {
 		width: 60%;
 	}
 	#hero .hero-img img {
-		border-radius: 0px 40px;
+		border-radius: 0px 30px;
 		box-shadow: 0 0 10px #32cee6;
 	}
 }
