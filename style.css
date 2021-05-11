@@ -275,7 +275,7 @@ p {
  	width: 50%;
 }
 #hero .hero-img img {
-	border-radius: 0px 80px;
+	border-radius: 0px 50px;
 	box-shadow: 0 0 10px #32cee6;
 }
 /* End Hero Section */
@@ -599,8 +599,21 @@ p {
 
 /* Media Query For Mobile */
 @media only screen and (max-width: 768px) {
+	#hero h1 {
+		font-size: 4rem;
+	}
+
 	#hero .hero-img-box {
-		display: none;
+		display: block;
+		justify-content: center;
+		margin-left: 30px;
+		margin-right: auto;
+		margin-top: 20px;
+		width: 60%;
+	}
+	#hero .hero-img img {
+		border-radius: 0px 40px;
+		box-shadow: 0 0 10px #32cee6;
 	}
 }
 /* End Media Query For Mobile */
