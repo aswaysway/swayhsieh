@@ -24,7 +24,6 @@ menu_item.forEach((item) => {
 	});
 });
 
-
 var hero_img = document.querySelectorAll("#hero-img img"), i = 1;
 Array.prototype.forEach.call(hero_img, function(img) { 
     setTimeout(function(){ img.classList.add("visible") }, 700*i)

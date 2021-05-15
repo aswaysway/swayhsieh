@@ -468,10 +468,10 @@ p {
 	opacity: .2;
 }
 #projects .project-img img {
-	transition: .3s ease transform;
+	transition: 1s ease transform;
 }
 #projects .project-item:hover .project-img img {
-	transform: scale(1.1);
+	transform: scale(1.03);
 }
 /* End Projects section */
 
