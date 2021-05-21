@@ -206,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/main-bg.png);
+	background-image: url(./img/background/main-bg-profile.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -221,7 +221,7 @@ p {
 	height: 100%;
 	width: 100%;
 	background-color: #808080;
-	opacity: .3;
+	opacity: 0.1;
 	z-index: -1;
 }
 #hero .hero {
