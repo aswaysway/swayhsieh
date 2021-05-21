@@ -206,7 +206,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./img/background/main-bg-profile.png);
+	background-image: url(./img/background/main-bg.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -233,7 +233,7 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 4rem;
+	font-size: 5rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
@@ -270,15 +270,17 @@ p {
 }
 
 #hero .hero-img-box {
-	display: block;
+	display: flex;
 	justify-content: center;
+	align-items: flex-end;
   	margin-left: auto;
   	margin-right: auto;
- 	width: 50%;
+ 	width: 30%;
 }
-#hero .hero-img img {
-	border-radius: 0px 50px;
-	box-shadow: 0 0 10px #32cee6;
+#hero .hero-img{
+	position: relative;
+	top: 100px;
+	left: 0;
 }
 #hero-img img{
 	opacity: 0;
@@ -616,10 +618,13 @@ p {
 }
 /* End Keyframes */
 
+
+
 /* Media Query For Mobile */
 @media only screen and (max-width: 768px) {
 	#hero h1 {
-		font-size: 4rem;
+		font-size: 5rem;
+		color:red;
 	}
 	#hero .hero-img-box {
 		display: block;
@@ -627,11 +632,9 @@ p {
 		margin-left: 30px;
 		margin-right: auto;
 		margin-top: 20px;
-		width: 60%;
+		width: 50%;
 	}
 	#hero .hero-img img {
-		border-radius: 0px 30px;
-		box-shadow: 0 0 10px #32cee6;
 	}
 }
 /* End Media Query For Mobile */
