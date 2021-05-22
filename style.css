@@ -87,7 +87,7 @@ p {
 	height: auto;
 }
 #header .header {
-	min-height: 7vh;
+	min-height: 8vh;
 	background-color: rgba(31, 30, 30, 0.24);
 	transition: .3s ease background-color;
 }
