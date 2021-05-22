@@ -435,6 +435,7 @@ p {
 	padding: 30px;
 	flex-basis: 50%;
 	height: 100%;
+	width: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
@@ -478,7 +479,7 @@ p {
 	transition: 1s ease transform;
 }
 #projects .project-item:hover .project-img img {
-	transform: scale(1.03);
+	transform: scale(1.02);
 }
 /* End Projects section */
 
@@ -618,9 +619,7 @@ p {
 }
 /* End Keyframes */
 
-
-
-/* Media Query For Mobile */
+/* Mobile Start */
 @media only screen and (max-width: 768px) {
 	#hero h1 {
 		font-size: 5rem;
@@ -636,10 +635,33 @@ p {
 	#hero .hero-img{
 		top: 30px;
 	}
-}
-/* End Media Query For Mobile */
 
-/* Media Query For Tablet */
+	#about .about p{
+		font-size: 1.2rem;
+	}
+
+	#services .service-item h2 {
+		font-size: 2rem;
+		text-align: left;
+	}
+	#services .service-item p {
+		font-size: 1.2rem;
+		text-align: left;
+	}
+
+	#projects .project-item h1{
+		font-size: 2.5rem;
+	}
+	#projects .project-item h2{
+		font-size: 1.2rem;
+	}
+	#projects .project-item p{
+		font-size: 1rem;
+	}
+}
+/* Mobile End */
+
+/* Tablet Start */
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
@@ -649,7 +671,6 @@ p {
 		font-size: 6rem;
 	}
 
-	/* Hero */
 	#hero h1 {
 		font-size: 7rem;
 	}
@@ -657,16 +678,11 @@ p {
 		font-size: 7rem;
 	}
 
-	/* End Hero */
-
-	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
 		margin: 2.5%;
 	}
-	/* End Services Section */
 
-	/* Project */
 	#projects .project-item {
 		flex-direction: row;
 	}
@@ -685,9 +701,7 @@ p {
 	#projects .all-projects .project-img {
 		height: 100%;
 	}
-	/* End Project */
 
-	/* About */
 	#about .about {
 		flex-direction: row;
 	}
@@ -710,7 +724,6 @@ p {
 	#about .col-right h1 {
 		text-align: left;
 	}
-	/* End About */
 
 	#contact {
 		text-align: center;
@@ -724,13 +737,11 @@ p {
 	#contact .contact-items .contact-item .icon img{
 		width: fit-content;
 	}
-	/* End contact  */
 }
-/* End Media Query For Tablet */
+/* Tablet End */
 
-/* Media Query For Desktop */
+/* Desktop Start */
 @media only screen and (min-width: 1200px) {
-	/* header */
 	#header .hamburger {
 		display: none;
 	}
@@ -750,6 +761,5 @@ p {
 	#header .nav-list ul a:after {
 		display: none;
 	}
-	/* End header */
 }
-/* End  Media Query For Desktop */
+/* Desktop End */
