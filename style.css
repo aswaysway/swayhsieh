@@ -637,7 +637,7 @@ p {
 	}
 
 	#about .about p{
-		font-size: 1.6rem;
+		font-size: 1.8rem;
 	}
 
 	#services .service-item h2 {
@@ -645,18 +645,8 @@ p {
 		text-align: left;
 	}
 	#services .service-item p {
-		font-size: 1.7rem;
+		font-size: 2rem;
 		text-align: left;
-	}
-
-	#projects .project-item h1{
-		font-size: 3rem;
-	}
-	#projects .project-item h2{
-		font-size: 1.7rem;
-	}
-	#projects .project-item p{
-		font-size: 1.5rem;
 	}
 }
 /* Mobile End */
