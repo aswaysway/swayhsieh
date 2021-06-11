@@ -7,6 +7,8 @@
 }
 :root{
 	--color-accent: #32cde6;
+	--color-header: #1f1e1e;
+	--color-footer: #1f1e1e;
 }
 html {
 	font-size: 10px;
@@ -70,10 +72,12 @@ p {
 	font-size: 3rem;
 	text-transform: uppercase;
 	color: white;
+	letter-spacing: 3px;
 }
 .brand h1 span {
 	color: var(--color-accent);
 }
+/* End Brand */
 
 /* Header section */
 #header {
@@ -101,7 +105,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	background-color: var(--color-header);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -540,10 +544,9 @@ p {
 
 /* Footer */
 #footer {
-	/* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
-	background: #141e30;
-	background: -webkit-linear-gradient(to right, #141e30, #243b55);
-	background: linear-gradient(to right, #141e30, #243b55);
+	background: var(--color-footer);  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #footer .footer {
 	min-height: 200px;
