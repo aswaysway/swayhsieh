@@ -91,7 +91,7 @@ p {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: flex-end;
 	align-items: center;
 }
 #header .nav-list ul a {
@@ -106,6 +106,12 @@ p {
 }
 #header .nav-list ul li:hover a {
 	color: var(--color-accent);
+}
+#header .nav-list img {
+	padding-top: 5px;
+	margin: 0;
+	height: auto;
+	width: 40px;
 }
 /* End Header section */
 
@@ -160,7 +166,7 @@ p {
 	color: white;
 }
 #projects a {
-	color:#32cee6;
+	color: var(--color-accent);
 	font-size: 0.8rem;
 }
 #projects .project-img {
@@ -233,7 +239,16 @@ p {
 /* Mobile Start */
 @media only screen and (max-width: 768px) {
 	#header .nav-list ul a {
-		font-size: 1.4rem;
+		font-size: 1.3rem;
+	}
+	#projects .project-item h1{
+		font-size: 3rem;
+	}
+	#projects .project-item h2{
+		font-size: 1.5rem;
+	}
+	#projects .project-item p{
+		font-size: 1.1rem;
 	}
 }
 /* Mobile End */

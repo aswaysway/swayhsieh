@@ -151,8 +151,8 @@ p {
 	color: var(--color-accent);
 }
 #header .hamburger {
-	height: 60px;
-	width: 60px;
+	height: 50px;
+	width: 50px;
 	display: inline-block;
 	border: 3px solid white;
 	border-radius: 50%;
@@ -637,13 +637,37 @@ p {
 		top: 30px;
 	}
 
+	#about .col-right h2 {
+		padding-top: 15px;
+		font-size: 1.8rem;
+	}
+	#about .col-right p {
+		font-size: 1.3rem;
+		font-weight: 400;
+		text-align: left;
+	}
+
 	#services .service-item h2 {
-		font-size: 2.3rem;
+		font-size: 2.1rem;
 		text-align: left;
 	}
 	#services .service-item p {
-		font-size: 1.8rem;
+		font-size: 1.5rem;
 		text-align: left;
+	}
+	#services .service-item p span {
+		font-size: 1.3rem;
+		text-align: left;
+	}
+
+	#projects .project-item h1{
+		font-size: 3rem;
+	}
+	#projects .project-item h2{
+		font-size: 1.5rem;
+	}
+	#projects .project-item p{
+		font-size: 1.1rem;
 	}
 }
 /* Mobile End */
