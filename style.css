@@ -339,17 +339,21 @@ p {
 }
 #about .col-left .about-img {
 	height: 100%;
-	width: 100%;
+	width: 90%;
 	position: relative;
 	border: 10px solid var(--color-body);
-	border-radius: 3px;
+	border-radius: 10px;
 	box-shadow: 0 0 15px #32cee6;
+}
+#about .col-left .about-img img{
+	width: 100%;
+	border-radius: 5px;
 }
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
 	left: -30px;
-	top: 33px;
+	top: 30px;
 	height: 98%;
 	width: 98%;
 	border: 1px solid var(--color-accent);
