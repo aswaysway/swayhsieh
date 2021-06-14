@@ -243,6 +243,7 @@ p {
 	display: block;
 	width: fit-content;
 	font-size: 5rem;
+	font-weight: 300;
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
@@ -633,7 +634,7 @@ p {
 @keyframes text_reveal {
 	100% {
 		color: white;
-		font-weight: 600;
+		font-weight: 300;
 	}
 }
 @keyframes text_reveal_name {
