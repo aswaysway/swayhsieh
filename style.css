@@ -383,7 +383,6 @@ p {
 	border-radius: 10px;
 	background-image: url(./img/skills-bg.png);
 	background-size: cover;
-	background-attachment: fixed;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
