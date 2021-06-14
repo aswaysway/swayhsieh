@@ -9,12 +9,17 @@
 :root{
 	--color-accent: #32cde6;
 	--color-header: #1f1e1e;
+	--color-body: #3d3d3d;
 	--color-footer: #1f1e1e;
 }
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+}
+body {
+	background-color: var(--color-body);
+	color: white;
 }
 a {
 	text-decoration: none;
@@ -42,7 +47,7 @@ p {
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color: black;
+	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: .2rem;

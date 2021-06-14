@@ -8,12 +8,17 @@
 :root{
 	--color-accent: #32cde6;
 	--color-header: #1f1e1e;
+	--color-body: #3d3d3d;
 	--color-footer: #1f1e1e;
 }
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
 	scroll-behavior: smooth;
+}
+body {
+	background-color: var(--color-body);
+	color: white;
 }
 a {
 	text-decoration: none;
@@ -31,7 +36,7 @@ img {
 	object-fit: cover;
 }
 p {
-	color: black;
+	color: white;
 	font-size: 1.4rem;
 	margin-top: 10px;
 	line-height: 2.5rem;
@@ -41,7 +46,7 @@ p {
 .section-title {
 	font-size: 4rem;
 	font-weight: 300;
-	color: black;
+	color: white;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
@@ -64,7 +69,6 @@ p {
 	transition-property: background-color, color;
 }
 .cta:hover {
-	color: white;
 	background-color: var(--color-accent);
 }
 /* Brand */
@@ -211,6 +215,7 @@ p {
 	background-image: url(./img/background/main-bg.png);
 	background-size: cover;
 	background-position: top center;
+	background-attachment: fixed;
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -281,7 +286,7 @@ p {
 }
 #hero .hero-img{
 	position: relative;
-	top: 100px;
+	top: 93px;
 	left: 30px;
 }
 #hero-img img{
@@ -307,19 +312,24 @@ p {
 }
 #about .col-right {
 	width: 100%;
+	margin-left: 50px;
+	margin-top:50px;
+}
+#about .col-right h1 {
+	margin-bottom: 30px;
 }
 #about .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: .2rem;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
 	line-height: 40px;
 }
 #about .col-right .cta {
-	color: black;
+	color: white;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
@@ -328,19 +338,18 @@ p {
 	height: 100%;
 	width: 100%;
 	position: relative;
-	border: 10px solid white;
-	/* border-radius: 0px 50px; */
-	box-shadow: 0 0 10px #32cee6;
-
+	border: 10px solid var(--color-body);
+	border-radius: 3px;
+	box-shadow: 0 0 15px #32cee6;
 }
 #about .col-left .about-img::after {
 	content: '';
 	position: absolute;
-	left: -33px;
-	top: 19px;
+	left: -30px;
+	top: 33px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid var(--color-accent);
+	border: 1px solid var(--color-accent);
 	z-index: -1;
 }
 /* End About Section */
@@ -374,6 +383,7 @@ p {
 	border-radius: 10px;
 	background-image: url(./img/skills-bg.png);
 	background-size: cover;
+	background-attachment: fixed;
 	margin: 10px 5%;
 	position: relative;
 	z-index: 1;
@@ -521,7 +531,7 @@ p {
 	transition: .3s ease box-shadow;
 }
 #contact .contact-item:hover {
-	box-shadow: 0px 0px 25px 0 #0000002c;
+	box-shadow: 0px 0px 25px 0 var(--color-accent);
 }
 #contact .icon {
 	width: 70px;
@@ -538,7 +548,19 @@ p {
 	font-size: 1.7rem;
 	line-height: 2rem;
 	font-weight: 500;
-	margin-top: 10px;
+	margin-top: 15px;
+}
+#contact button {
+	margin-top: 20px;
+	padding: 3px 10px;
+	background-color: transparent;
+	border: 1.5px solid white;
+	border-radius: 10px;
+	color: white;
+}
+#contact button:hover{
+	cursor:pointer;
+	box-shadow: 0px 0px 10px 1px var(--color-accent);
 }
 /*End contact Section */
 
@@ -637,6 +659,10 @@ p {
 		top: 30px;
 	}
 
+	#about .col-right {
+		margin-left: 0;
+		margin-top: 50px;
+	}
 	#about .col-right h2 {
 		padding-top: 15px;
 		font-size: 1.8rem;
@@ -645,6 +671,10 @@ p {
 		font-size: 1.3rem;
 		font-weight: 400;
 		text-align: left;
+		margin-left: 5px;
+	}
+	#about .col-right .cta {
+		font-size: 1.5rem;
 	}
 
 	#services .service-item h2 {
@@ -722,11 +752,11 @@ p {
 		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
+		left: -40px;
+		top: 40px;
 		height: 98%;
 		width: 98%;
-		border: 10px solid var(--color-accent);
+		border: 1px solid var(--color-accent);
 	}
 	#about .col-right {
 		text-align: left;
