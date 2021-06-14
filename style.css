@@ -645,7 +645,7 @@ p {
 @keyframes text_reveal_name {
 	100% {
 		color: var(--color-accent);
-		font-weight: 800;
+		font-weight: 350;
 	}
 }
 /* End Keyframes */
