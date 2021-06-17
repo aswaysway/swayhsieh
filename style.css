@@ -77,7 +77,7 @@ p {
 	text-transform: uppercase;
 	color: white;
 	letter-spacing: 3px;
-	font-weight: 300;
+	font-weight: 500;
 	padding-left: 10px;
 }
 .brand h1 span {
@@ -475,8 +475,8 @@ p {
 	color: white;
 }
 #projects a {
-	color:#32cee6;
-	font-size: 0.8rem;
+	color:var(--color-accent);
+	font-size: 1rem;
 }
 #projects .project-img {
 	flex-basis: 50%;
