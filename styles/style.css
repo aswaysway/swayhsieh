@@ -289,7 +289,7 @@
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: url(./img/skills-bg.png);
+	background-image: url(../img/background/skills-bg.png);
 	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
