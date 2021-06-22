@@ -173,8 +173,12 @@ p {
 	color: white;
 }
 #projects a {
-	color: var(--color-accent);
-	font-size: 1rem;
+	color:var(--color-accent);
+	font-size: 1.4rem;
+	transition: color .3s ease-in-out;
+}
+#projects a:hover {
+	color: #85eeff;
 }
 #projects .project-img {
 	flex-basis: 50%;
