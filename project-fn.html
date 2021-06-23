@@ -6,6 +6,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/style-fn.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Sway Hsieh | Front End Portfolio</title>
 </head>
 <body>
@@ -30,10 +31,10 @@
   <!-- Projects Section -->
   <section id="projects">
     <div class="projects container">
-      <div class="projects-header">
+      <div class="projects-header" data-aos="zoom-in">
         <h1 class="section-title"><span>Front end</span> Development</h1>
       </div>
-      <div class="all-projects">
+      <div class="all-projects" data-aos="fade-right">
         <div class="project-item">
           <div class="project-info">
             <h1>Restaurant Website</h1>
@@ -146,5 +147,9 @@
   <!-- End Footer -->
   
   <script src="./app.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>

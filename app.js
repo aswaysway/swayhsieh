@@ -25,6 +25,7 @@ menu_item.forEach((item) => {
   });
 });
 
+// Hero img Fade In
 const hero_img = document.querySelectorAll("#hero-img img"),
 i = 1;
 Array.prototype.forEach.call(hero_img, function (img) {
