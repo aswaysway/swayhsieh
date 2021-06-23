@@ -363,11 +363,11 @@
 	color: white;
 }
 #projects .project-info h1 {
-	font-size: 4rem;
+	font-size: 3.5rem;
 	font-weight: 500;
 }
 #projects .project-info h2 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	font-weight: 300;
 	margin-top: 20px;
 }
@@ -559,6 +559,9 @@
 		text-align: left;
 	}
 
+	#projects .projects-header h1 {
+		margin-bottom: 50px;
+	}
 	#projects .project-item h1{
 		font-size: 3rem;
 	}
