@@ -1,3 +1,4 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 /* Header section */
 #header {
 	position: fixed;
@@ -373,10 +374,32 @@
 }
 #projects .project-info p {
 	color: white;
+	margin-bottom: 5px;
+}
+#projects .project-info .more-text {
+	display: none;
+}
+#projects .project-info .text.show-more .more-text {
+	display: inline;
+}
+#projects .project-info .read-more-btn {
+	background: transparent;
+	border: none;
+	padding: 0;
+	margin-bottom: 15px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	color: lightslategray;
+
+	cursor: pointer;
+}
+#projects .project-info .read-more-btn:hover {
+	color: white;
+	transition: color .3s ease-in-out;
 }
 #projects a {
 	color:var(--color-accent);
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 	transition: color .3s ease-in-out;
 }
 #projects a:hover {
@@ -569,7 +592,10 @@
 		font-size: 1.5rem;
 	}
 	#projects .project-item p{
-		font-size: 1.1rem;
+		font-size: 1.2rem;
+	}
+	#projects .project-info .read-more-btn {
+		font-size: 1.3rem;
 	}
 }
 /* Mobile End */
