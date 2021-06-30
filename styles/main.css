@@ -71,8 +71,8 @@ p {
 .cta:hover {
 	background-color: var(--color-accent);
 }
-/* Brand */
 
+/* Brand */
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
@@ -85,46 +85,3 @@ p {
 	color: var(--color-accent);
 }
 /* End Brand */
-
-/* Footer */
-#footer {
-	background: var(--color-footer);  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to bottom, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-#footer .footer {
-	min-height: 200px;
-	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 10px;
-}
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: .1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
-}
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
-}
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: .3s ease filter;
-	margin-top: 10px;
-}
-#footer .social-item:hover img {
-	filter: grayscale(0);
-}
-#footer p {
-	color: white;
-	font-size: 1.3rem;
-}
-/* End Footer */

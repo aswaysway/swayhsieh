@@ -35,19 +35,6 @@ Array.prototype.forEach.call(hero_img, function (img) {
 });
 
 // Read More Button
-// const readMoreBtn = document.querySelector('.read-more-btn');
-// const text = document.querySelector('.text');
-
-// readMoreBtn.addEventListener('click', (e) => {
-//   text.classList.toggle('show-more')
-//   if (readMoreBtn.innerText === 'Read More'){
-//     readMoreBtn.innerText = 'Read Less';
-//   } else {
-//     readMoreBtn.innerText = 'Read More';
-//   }
-// });
-
-// Read More Button
 $('.read-more-btn').on('click', function(){
   $(this).siblings('.text').toggleClass('show-more');
 
